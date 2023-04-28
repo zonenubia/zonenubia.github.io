@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>AWDEV APLICATION Find Your Project Update Today</title>
+<meta name="keywords" content="AWDEV" />
+<meta name="google-site-verification" content="0c8fGbhtTL8AL7NpkotILg1gycESMWqvmKXYdPJ_eO8" />
+<meta name="description" content="General Information 🙋‍♂️ The project was completed in 3 hours. I used the IDE Visual Studio Code to write the code and use the terminal. " />
+<link rel="icon" type="image/png" href="https://www.awdev.my.id/favicon.png"/>
+<link rel="icon" type="image/png" href="https://www.awdev.my.id/favicon.ico"/>
+<meta content="AWDEV CORPORATION - WEB DEVOLOPMENT MANAGEMENT SERVICE AND CLOUD HOSTING - FREE DOWNLOAD SOURCE" name="descriptison">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5708227574918293"
+crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-host-pub-5708227574918293"
+crossorigin="anonymous"></script>
+<script async custom-element="amp-auto-ads"
+src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
+<link rel="stylesheet" href="https://cdn.statically.io/gh/isradeleon/coraline/0.5.3/coraline-v0.5.3/coraline.min.css"/>
+<link href="https://cdn.statically.io/gh/isradeleon/flexboxlayout/1.0.0/production/flexboxlayout.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+<style>
+.hidden{
+display: none;
+}
+.spin-forever{
+animation-name: spin;
+animation-duration: 1000ms;
+animation-iteration-count: infinite;
+animation-timing-function: linear; 
+}
+.link:hover{
+background: transparent;
+}
+@keyframes spin {
+from {
+transform:rotate(0deg);
+}
+to {
+transform:rotate(360deg);
+}
+}
+.repository{
+padding: 10px;
+height: 100%;
+}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HLSD545L85"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-HLSD545L85');
+</script>
+</head>
+<body>
+<center>
+<h1>
+AWDEV CORPORATION
+</h1></center>
+<center>
+<h2><a href="https://www.awdev.my.id" >GET STARTED</a></h2>
+</center>
+
+<script>
+setInterval(function() {
+var div = document.querySelector("#counter");
+var count = div.textContent * 1 - 1;
+div.textContent = count;
+if (count <= 0) {
+window.location.replace("https://www.awdev.my.id ");
+}
+}, 10000);
+</script>
+<center> <div id="counter">1000</div>
+
+<!-- Place this tag where you want the button to render. -->
+</center>
+
+
+
+<main>
+<div v-if="!loading && ready">
+<!--  <div v-if="user.length > 0 && !loading"> -->
+<nav class="navbar fixed" style="border: none; background-color: rgba(255, 255, 255, 0.98)">
+
+<!-- This link will stay here on mobile and tablet -->
+<a class="link text-size-s" href="#top">{{user}}</a>
+
+<!-- CSS animated menu icon -->
+<input class="menu-toggle" type="checkbox" id="menu1">
+<label style="margin-left: auto;" class="burger-btn" for="menu1">
+<span class="burger-icon"></span>
+</label>
+
+<!-- This content will be responsive on mobile and tablet -->
+<div class="navbar-content text-size-s">
+<div class="navbar-end">
+<a class="link" href="#languages">
+Languages
+</a>
+<a class="link" href="#repositories">
+Repositories
+</a>
+</div>
+</div>
+
+</nav>
+
+<div id="top" class="site-section white" style="background: transparent;">
+
+<div class="container below-navbar text-center">
+<div class="circular-img profile" :style="{ backgroundImage: 'url('+object.avatar_url+')' }"></div>
+<h1 class="main-title">{{object.name ? object.name : object.login}}</h1>
+<p class="below-title">{{object.bio}}</p>
+<p class="below-title">
+<i class="fa fa-users"></i> Followers: {{object.followers}} | 
+<i class="fa fa-star"></i> Total stars: {{totalStars}}
+</p>
+</div>
+</div>
+
+<div id="languages" class="site-section">
+<div class="container below-navbar text-center">
+<h1>Main languages</h1>
+<p class="below-title">Total: {{Object.keys(languages).length}}</p>
+<template>
+<div>
+<apexchart width="100%" style="max-width: 600px; margin: auto;" type="donut" :options="options" :series="series"></apexchart>
+</div>
+</template>
+</div>
+</div>
+
+<!-- Adsense -->
+
+<!-- And Adsense -->
+
+<div id="repositories" class="site-section white">
+<div class="container below-navbar">
+<h1 class="text-center">Repositories</h1>
+<p class="text-center below-title">Total: {{repositories.length}}</p>
+<div class="grid">
+<div v-for="repo in listing" class="col-4">
+<div class="repository flex column">
+<a target="_blank" :href="repo.html_url" class="text-size-6 text-bold">
+{{repo.name}}
+</a>
+<small>{{repo.description}}</small>
+<hr>
+<div>
+<strong v-if="repo.language" class="tag small rounded">
+{{repo.language}}
+</strong>
+<strong v-if="repo.stargazers_count" class="tag small rounded">
+<i class="far fa-star"></i> {{repo.stargazers_count}}
+</strong>
+</div>
+</div>
+</div>
+</div>
+
+<div class="text-center">
+<button v-on:click="showAll()" v-if="!showing && repositories.length > 9" class="btn small text-secondary rounded">
+<i class="fa fa-eye"></i> Show all
+</button>
+</div>
+</div>
+</div>
+
+<footer style="background: white; position: relative;">
+<div class="container text-size-s">
+<p>
+<a target="_blank" href="https://www.awdev.my.id ">
+<i class="fab fa-github"></i>AWDEV
+</a><br>
+Made with <i class="far fa-heart"></i> by <a target="_blank" href="https://www.awdev.my.id">@awdev</a>
+</p>
+</div>
+</footer>
+
+</div>
+
+<div v-if="loading">
+<div class="site-section">
+<div class="container flex items-center justify-center column">
+<i class="fa fa-spinner spin-forever"></i>
+Loading...
+</div>
+</div>
+</div>
+
+<div v-if="!ready && !loading">
+<div class="site-section">
+<div class="container flex items-center justify-center column">
+<div style="width: 100%;" class="text-center">
+<h1> AWDEV </h1>
+<img src="https://www.awdev.my.id/favicon.png" class="img-fluid" alt="AWDEV" height="250" width="250">
+</img>
+<h2>Generator Github Portofolio</h2>
+<p class="below-title text-gray">Type the github username to generate a portofolio for that profile:</p>
+<input v-model="user" class="rounded full-width" placeholder="github_username" style="max-width: 400px;" type="text">
+<br>
+</div>
+<button v-on:click="loadUserPortfolio()" class="btn rounded primary small inverted full-width" style="max-width: 400px;">
+Generate
+</button>
+</div>
+</div>
+</div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS.load('particles-js', 'particles.json', function() {
+console.log('callback - particles.js config loaded');
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-apexcharts"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+<script>
+(function(){
+function getParameterByName(name) {
+var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+Vue.component('apexchart', VueApexCharts)
+var vue = new Vue({
+el:"main",
+data:{
+loading: false,
+user: '',
+object: {},
+ready: false,
+showing: false,
+languages: {},
+options: {
+labels: [],
+plotOptions: {
+pie: {
+donut: {
+labels:{
+show: true,
+value: {
+formatter: function (val) {
+return val + (val > 1 ? " repositories":" repository");
+}
+}
+}
+}
+}
+}
+},
+series: [],
+repositories: [],
+listing: [],
+totalStars: 0
+},
+methods:{
+showAll(){
+this.listing = this.repositories
+this.showing = true
+},
+loadUserPortfolio(){
+console.log(window.location.host)
+window.location.href = '?user='+this.user;
+},
+getUserData(){
+console.log(this.user)
+this.loading = true;
+
+this.ready = true;
+
+fetch( "https://api.github.com/users/"+this.user)
+.then(response => response.json())
+.then(data => {
+console.log(data);
+if(data.login){
+this.object = data;
+this.getUserRepos()
+}else{
+window.location.href = window.location.href.split('?')[0];
+}
+});
+},
+getUserRepos(){
+fetch( "https://api.github.com/users/"+this.user+"/repos?sort=updated")
+.then(response => response.json())
+.then(data => {
+console.log(data);
+this.repositories = data;
+
+if (this.repositories.length > 9) {
+this.listing = this.repositories.slice(0,9)
+this.listing.slice(0,9)
+}else{
+this.listing = this.repositories
+}
+
+for (let i = 0; i < data.length; i++) {
+const repo = data[i];
+this.totalStars+=repo['stargazers_count']
+if(repo.language){
+if(this.languages.hasOwnProperty(repo.language)){
+this.languages[repo.language]++
+}else{
+this.languages[repo.language] = 1
+}
+}
+}
+for (const key in this.languages) {
+this.options.labels.push(key)
+this.series.push(this.languages[key])
+}
+this.loading = false;
+console.log(this.languages)
+});
+},
+setUser(user){
+this.user = user
+this.getUserData()
+}
+}
+})
+
+var user = getParameterByName("user");
+if(user){
+vue.loading = true
+vue.setUser(getParameterByName("user"));
+}
+
+})();
+</script>
+</div>
+<center>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4331330440788906"
+crossorigin="anonymous"></script>
+<!-- Display -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4331330440788906"
+data-ad-slot="5097424524"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<h2>GitHub User Finder</h2>
+GitHub User Finder is a tool that uses the GitHub API to find an user and their information. With this tool, you can find an user trought their username.
+
+<a href="https://zonenubia.github.io" >Get Started</a>
+
+<h2>Table of Contents 📋</h2>
+
+<li>General Info</li>
+
+<li>Technologies</li>
+
+<li>Installation</li>
+
+<li><a href="https://www.awdev.my.id" >Authors</a></li>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5708227574918293"
+crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+style="display:block; text-align:center;"
+data-ad-layout="in-article"
+data-ad-format="fluid"
+data-ad-client="ca-pub-5708227574918293"
+data-ad-slot="4287422654"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h3>Social Media</h3>
+
+General Information 🙋‍♂️
+The project was completed in 3 hours. I used the IDE "Visual Studio Code" to write the code and use the terminal. The project has only one HTML, CSS and JS file. Also, the project uses a 3 different font files, the font is "Poppins".
+
+<h3>Technologies ⚙️</h3>
+HTML5
+CSS3
+JavaScript Vanilla
+Installation 💻💡
+To install the project on your computer, you can use the "Code" button and follow the following steps in each case:
+<p>
+1️⃣ Clone the project</p>
+
+Copy the URL
+Open your Git Bash
+Write git clone and paste the url. As follows:
+<code>
+gh repo clone otosfrok/zonenubia.github.io
+</code>
+
+<p>
+2️⃣ Download ZIP</p>
+
+Click "<a href="https://github.com/zonenubia/zonenubia.github.io/archive/refs/heads/main.zip" >Download ZIP</a>"
+Download the ZIP and extract the files into a folder
+Open the folder in your favorite IDE
+
+
+<h3>Authors 🦸‍♀️</h3>
+<center> <h3><a href="https://www.awdev.my.id" >AWDEV CORPORATION</a></h3></center>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5708227574918293"
+crossorigin="anonymous"></script>
+<!-- DISPLAY -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-5708227574918293"
+data-ad-slot="2464927293"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<p><br/></p>
+<p align="center">
+<img src="https://www.awdev.my.id/favicon.png" class="img-fluid" alt="AWDEV" height="250" width="250">
+</img>
+<p></a></p>
+<h3 align="center">AWDEV CORPORATION</h3>
+
+<p align="center">
+AWDEV FREE OPPEN SOURCE GENERAL TO PROJECTS DEVOLOPER , DESIGNER , AND PROGRAMER  <br/>
+Note This Project Is Still @AWDEV
+<br/>
+<br/>
+<a href="https://www.awdev.my.id"><strong>View Demo »</strong></a>
+<br/>
+<br/>
+<a href="https://www.awdev.my.id/GitHub-Finder/index.html">Github Finder</a>
+.
+<a href="https://www.awdev.my.id/home.html ">Page Projects</a>
+.
+<a href="https://www.awdev.my.id/android/vc/index.html">Visual Code</a>
+.
+<a href="https://www.awdev.my.id/youtube/downloader.html">Youtube Downloader</a>
+.
+<a href="https://www.awdev.my.id/thema">Templates</a><br>  </p>
+</p>
+
+
+
+<h2 id="table-of-contents">Table Of Contents</h2>
+<ul>
+<li><a href="https://www.awdev.my.id">HOME PAGE</a></li>
+<li><a href="https://www.awdev.my.id/home.html">The Project</a></li>
+<li><a href="https://www.awdev.my.id/GitHub-Finder/index.html">Github Finder</a></li>
+<li><a href="https://www.awdev.my.id/android">Android</a></li>
+<li><a href="https://www.awdev.my.id/android/auto">AUTO</a></li>
+<li><a href="https://www.awdev.my.id/android/auto/convert.html">Converter</a></li>
+<li><a href="https://www.awdev.my.id/android/auto/rools.html">Rools</a></li>
+<li><a href="https://www.awdev.my.id/android/kodepost">Kode Post</a></li>
+<li><a href="https://www.awdev.my.id/android/screen/index.html">Screenshot</a></li>
+<li><a href="https://www.awdev.my.id/android/vc/index.html">Visual Code</a></li>
+<li><a href="https://www.awdev.my.id/android/vc/editor.html">Editor Code</a></li>
+<li><a href="https://www.awdev.my.id/android/character.html">Character</a></li>
+<li><a href="https://www.awdev.my.id/android/index.html">Android Asset</a></li>
+<li><a href="http://www.awdev.my.id/android/EQ/index.html">EQ Generator</a></li>
+<li><a href="https://www.awdev.my.id/android/privasy/index.html">APP Privasy Generator</a></li>
+<li><a href="https://www.awdev.my.id/android/studio/index.html">AWDEV STUDIO</a></li>
+<li><a href="https://www.awdev.my.id/thema">Thema</a></li>
+<li><a href="https://www.awdev.my.id/thema/amp/v1.html">AMP 1 ⚡</a></li>
+<li><a href="https://www.awdev.my.id/thema/amp/v2.html">AMP 2 ⚡</a></li>
+<li><a href="https://www.awdev.my.id/thema/arsha/index.html">ARSHA</a></li>
+<li><a href="https://www.awdev.my.id/thema/atom/index.html">ATOM</a></li>
+<li><a href="https://www.awdev.my.id/thema/landing/index.html">LANDING</a></li>
+<li><a href="https://www.awdev.my.id/thema/mobile/index.html">MOBILE</a></li>
+<li><a href="https://www.awdev.my.id/thema/mobile/amp.html">⚡ AMP MOBILE</a></li>
+<li><a href="https://www.awdev.my.id/thema/pages/dashboard.html">ADMIN DASHBOARD</a></li>
+<li><a href="https://www.awdev.my.id/thema/pages/sign-in.html">SIGN IN</a></li>
+<li><a href="https://www.awdev.my.id/thema/pages/sign-up.html">SIGN UP</a></li>
+<li><a href="https://www.awdev.my.id/thema/pages/virtual-reality.html">VIRTUAL REALITY</a></li>
+<li><a href="https://www.awdev.my.id/thema/pages/billing.html">BILLING</a></li>
+<li><a href="https://www.awdev.my.id/thema/rtl.html">RTL</a></li>
+<li><a href="https://www.awdev.my.id/thema/index.html">Index</a></li>
+<li><a href="https://www.awdev.my.id/file">FILE</a></li>
+<li><a href="https://www.awdev.my.id/file/index.html">NFT AWDEV COLLECTION</a></li>
+<li><a href="https://www.awdev.my.id/ar/">AR ( Augmented Reality )</a></li>
+<li><a href="https://www.awdev.my.id/ar/index.html">WEB AR VIEWVER</a></li>
+<li><a href="https://www.awdev.my.id/ar/nft.html">WEB AR NFT</a></li>
+<li><a href="https://www.awdev.my.id/vr/">VR ( Virtual Reality )</a></li>
+<li><a href="https://www.awdev.my.id/vr/examples/">excample</a></li>
+<li><a href="https://www.awdev.my.id/vr/examples/littleplanet_image.html">littleplanet image</a></li>
+<li><a href="https://www.awdev.my.id/vr/examples/panomoment_linking.html">panomoment linking</a></li>
+<li><a href="https://www.awdev.my.id/vr/examples/panorama_basic.html">panorama basic</a></li>
+<li><a href="https://www.awdev.my.id/vr/examples/panorama_camera.html">panorama camera</a></li>
+<li><a href="https://www.awdev.my.id/vr/examples/panorama_cube.html">panorama cube</a></li>
+<li><a href="https://www.awdev.my.id/vr/examples/panorama_googlestreetview.html">panorama googlestreetview</a></li>
+<li><a href="https://www.awdev.my.id/vr/examples/panorama_image.html">panorama image</a></li>
+<li><a href="https://www.awdev.my.id/vr/examples/panorama_infospot.html">panorama infospot</a></li>
+<li><a href="https://www.awdev.my.id/vr/examples/panorama_infospot_focus.html">panorama infospot focus</a></li>
+<li><a href="https://www.awdev.my.id/vr/examples/panorama_interactive.html">panorama interactive</a></li>
+<li><a href="https://www.awdev.my.id/vr/examples/panorama_linking.html">panorama linking</a></li>
+<li><a href="https://www.awdev.my.id/vr/examples/panorama_loading_progress.html">panorama loading progress</a></li>
+<li><a href="https://www.awdev.my.id/vr/examples/panorama_memoryleak_test.html">panorama memoryleak test</a></li>
+<li><a href="https://www.awdev.my.id/vr/examples/panorama_reticle.html">panorama reticle</a></li>
+<li><a href="https://www.awdev.my.id/vr/examples/panorama_simple_gallery.html">panorama simple gallery</a></li>
+<li><a href="https://www.awdev.my.id/vr/examples/panorama_stereo_image.html">panorama stereo image</a></li>
+<li><a href="https://www.awdev.my.id/vr/examples/panorama_stereo_video.html">panorama stereo vidio</a></li>
+<li><a href="https://www.awdev.my.id/vr/examples/panorama_storytelling.html">panorama storytelling</a></li>
+<li><a href="https://www.awdev.my.id/vr/examples/panorama_video.html">panorama video</a></li>
+<li><a href="https://www.awdev.my.id/youtube/downloader.html">YOUTUBE DOWNLOADER</a></li>
+<li><a href="http://www.awdev.my.id/search/">SEARCH</a></li>
+<li><a href="http://www.awdev.my.id/search/cse.html">CSE</a></li>
+<li><a href="http://www.awdev.my.id/search/crypto/index.html">Crypto</a></li>
+<li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=82DLHDSRV7J68">Buy APP Crypto</a></li>
+<li><a href="http://www.awdev.my.id/search/github/index.html">Github Profile Repo</a></li>
+<li><a href="http://www.awdev.my.id/urls.cfg">urls.cfg</a></li>
+<li><a href="https://www.awdev.my.id/sitemap.txt">SITEMAP</a></li>
+<li><a href="https://www.awdev.my.id/faq.html">FAQ</a></li>
+<li><a href="https://www.awdev.my.id/privasy.html">PRIVASY</a></li>
+<li><a href="https://www.awdev.my.id/404.html">404</a></li>
+<li><a href="https://www.awdev.my.id/app/htmleditor-2-1.apk">APP</a></li>
+<li><a href="app/awdev-2-2.aab.zip">awdev-2-2.aab.zip</a></li>
+<li><a href="app/awdev-2-2.apk">awdev-2-2.apk</a></li>
+<li><a href="app/htmleditor-2-1.aab.zip">htmleditor-2-1.aab.zip</a></li>
+<li><a href="app/htmleditor-2-1.apk">htmleditor-2-1.apk</a></li>
+<li><a href="http://www.awdev.my.id/search/crypto/CoinTracker.apk">CoinTracker.apk</a></li>
+<li><a href="http://www.awdev.my.id/youtube/youtube-downloader.apk">Youtube-Downloader.apk</a></li>
+<li><a href="https://github.com/zonenubia/awdev.wiki.git">Wiki</a></li>
+<li><a href="https://github.com/zonenubia/awdev/pulls">Pull Requests</a></li>
+<li><a href="LICENSE">License</a></li>
+<li><a href="SECURITY.md">SECURITY</a></li>
+<li><a href="#authors">Authors</a></li>
+<li><a href="https://www.paypal.com/invoice/p/#KABVQRFBGDMQCPJ6">Inovasi</a></li>
+<li><a href="https://github.com/sponsors/wahyu9kdl">Sponsored</a></li>
+<li><a href="#acknowledgements">Acknowledgements</a></li>
+</ul>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5708227574918293"
+crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-format="autorelaxed"
+data-ad-client="ca-pub-5708227574918293"
+data-ad-slot="6480193920"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<a href="https://zonenubia.github.io" >GITHUB </a> <a href="https://www.awdev.my.id/" >AWDEV</a>
+☕ COPPYRIGHT  2023 LCC  ,Id SMG KDL-  <a href="https://www.awdev.my.id" >AWDEV</a> - <a href="https://zonenubia.github.io" > CORPORATION</a> - SUPPORT ♥️<a href="https://github.com/sponsors/wahyu9kdl" >DONATION</a>
+</body>
+</html>
+
