@@ -3,8 +3,6 @@
 Repo Version awdev protector 🛡
 view website [awdev](https://www.awdev.my.id/index.html)
 
-🔂 [Pull requests](https://github.com/awdev-corporation/awdev/pulls)
-
 ## Supported Versions
 
 Use this section to tell people about which versions of your project are
