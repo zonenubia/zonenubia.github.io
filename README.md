@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
   
-![favicon.png](https://awdev-corporation.github.io/awdev/favicon.png)</p>
+![favicon.png](favicon.png)</p>
 
 </a>
 
@@ -113,8 +113,8 @@
   - [htmleditor-2-1.apk](app/htmleditor-2-1.apk)
   - [CoinTracker.apk](http://www.awdev.my.id/search/crypto/CoinTracker.apk)
   - [Youtube-Downloader.apk](http://www.awdev.my.id/youtube/youtube-downloader.apk)
-- [Wiki](https://github.com/awdev-corporation/awdev.wiki.git)
-- [Pull Requests](https://github.com/awdev-corporation/awdev/pulls)
+- [Wiki](https://github.com/zonenubia/awdev.wiki.git)
+- [Pull Requests](https://github.com/zonenubia/awdev/pulls)
 - [License](LICENSE)
 - [SECURITY](SECURITY.md)
 - [Authors](#authors)
@@ -126,51 +126,21 @@
 
 GITHUB CLI
 ```
-gh repo clone awdev-corporation/awdev
+gh repo clone zonenubia/awdev
 ```
 HTTP/HTTPS
 
 ```
-https://github.com/awdev-corporation/awdev.git
+https://github.com/zonenubia/awdev.git
 ```
 ZIP
 ```
-https://github.com/awdev-corporation/awdev/archive/refs/heads/main.zip
+https://github.com/zonenubia/awdev/archive/refs/heads/main.zip
 ```
-# SERVICE
-
-OPPEN ON THIS SITE
-
-[https://www.awdev.my.id](https://www.awdev.my.id)
-
-[https://qr.awdev.my.id](https://qr.awdev.my.id)
-
-[https://m.awdev.my.id](https://m.awdev.my.id)
-
-[https://go.awdev.my.id](https://go.awdev.my.id)
-
-[https://app.awdev.my.id](https://app.awdev.my.id)
-
-[https://shop.awdev.my.id](https://shop.awdev.my.id)
-
-[https://qr-awdev.blogspot.com](https://qr-awdev.blogspot.com)
-
-[https://go-awdev.blogspot.com](https://go-awdev.blogspot.com)
-
-[https://pub-awdev.blogspot.com](https://pub-awdev.blogspot.com)
-
-[https://www.awdev.eu.org](https://www.awdev.eu.org)
-
-[https://cloud.awdev.eu.org](https://cloud.awdev.eu.org)
 
 ## Sponsor this project
 
 [@wahyu9kdl](https://github.com/sponsors/wahyu9kdl)
 wahyu9kdl AWDEV CORPORATION
-patreon
-patreon.com/Awfanspage
-open_collective
-opencollective.com/wahyu9kdl
-https://paypal.me/wahyudi9kdl
 https://trakteer.id/awfanspage/tip
 https://saweria.co/AwGroupChannel
