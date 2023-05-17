@@ -1,0 +1,21 @@
+@RunWith(AndroidJunit4.class)
+public class YourTests {
+    private final DebugAppCheckTestHelper debugAppCheckTestHelper =
+            DebugAppCheckTestHelper.fromInstrumentationArgs();
+
+    @Test
+    public void testWithDefaultApp() {
+        debugAppCheckTestHelper.withDebugProvider(() -> {
+            // Test code that requires a debug AppCheckToken.
+        });
+    }
+
+    @Test
+    public void testWithNonDefaultApp() {
+        debugAppCheckTestHelper.withDebugProvider(
+                FirebaseApp.getInstance("nonDefaultApp"),
+                () -> {
+                    // Test code that requires a debug AppCheckToken.
+                });
+    }
+}
