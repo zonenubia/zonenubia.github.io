@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "953071445640",
+    "project_id": "awdev-my-id",
+    "storage_bucket": "awdev-my-id.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953071445640:android:c25617fc775ebb9cbe213d",
+        "android_client_info": {
+          "package_name": "my.id.awdev.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953071445640-du8o0bslskddjvi1rp0qhv8tol4c4oa7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAXoY0ZSOZ1TNpCpXcEKG4p_x2N2h3h3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953071445640-du8o0bslskddjvi1rp0qhv8tol4c4oa7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
