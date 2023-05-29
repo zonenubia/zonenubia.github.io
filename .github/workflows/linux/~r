@@ -1,0 +1,5 @@
+sudo apt install dkms
+sudo cp -r awusb /usr/src/awdev-0.5
+sudo dkms add -m awdev -v 0.5
+sudo dkms build -m awdev -v 0.5
+sudo dkms install -m awdev -v 0.5
