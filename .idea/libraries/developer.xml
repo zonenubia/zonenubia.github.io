@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="developer">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/assets/assets/anim/developer.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
