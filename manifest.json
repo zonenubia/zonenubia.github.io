@@ -1,0 +1,140 @@
+{
+
+"name": "AWDEV",
+
+"short_name": "AWDEV CORPORATION",
+
+"start_url": "https://www.awdev.my.id",
+
+"sellerId": "pub-5708227574918293",
+
+"sellerType": "PUBLISHER",
+
+"name": "AWDEV",
+
+"display": "standalone",
+
+"background_color": "#fff",
+
+"theme_color": "#243b99",
+
+"keyword": "awdev",
+
+"description": "AWDEV FREE OPPEN SOURCE GENERAL TO PROJECTS DEVOLOPER , DESIGNER , AND PROGRAMER
+Note This Project Is Still @AWDEV
+
+View Demo »
+
+Github Finder . Page Projects . Visual Code . Youtube Downloader . Templates",
+
+"icons": [{
+
+"src": "/favicon.ico",
+
+"sizes": "48x48",
+
+"type": "image/png"
+
+}, {
+
+"src": "favicon.png",
+
+"sizes": "72x72",
+
+"type": "image/png"
+
+}, {
+
+"src": "favicon.png",
+
+"sizes": "96x96",
+
+"type": "image/png"
+
+}, {
+
+"src": "favicon.png",
+
+"sizes": "144x144",
+
+"type": "image/png"
+
+}, {
+
+"src": "favicon.png",
+
+"sizes": "168x168",
+
+"type": "image/png"
+
+}, {
+
+"src": "favicon.png",
+
+"sizes": "192x192",
+
+"type": "image/png"
+
+}, {
+
+"src": "favicon.png",
+
+"sizes": "512x512",
+
+"type": "image/png"
+
+}]
+
+}
+,
+{
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDO_WlJ7nHoe7T6udRU_wHO-TaW_LcZlTc",
+  authDomain: "awdev-my-id.firebaseapp.com",
+  projectId: "awdev-my-id",
+  storageBucket: "awdev-my-id.appspot.com",
+  messagingSenderId: "953071445640",
+  appId: "1:953071445640:web:6d0dc29b64282654be213d",
+  measurementId: "G-XBP1JRB80V"
+},
+{
+  "project_info": {
+    "project_number": "953071445640",
+    "project_id": "awdev-my-id",
+    "storage_bucket": "awdev-my-id.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953071445640:android:c25617fc775ebb9cbe213d",
+        "android_client_info": {
+          "package_name": "my.id.awdev.app"
+          "admob_id": "ca-app-pub-5708227574918293~1657209679"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953071445640-du8o0bslskddjvi1rp0qhv8tol4c4oa7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAXoY0ZSOZ1TNpCpXcEKG4p_x2N2h3h3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953071445640-du8o0bslskddjvi1rp0qhv8tol4c4oa7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
