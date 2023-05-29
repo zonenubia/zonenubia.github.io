@@ -5,6 +5,9 @@
 	"homepage": "https://github.com/awdev-corporation/awdev",
 	"website": "https://www.awdev.my.id/",
 	"main": "index.js",
+	"mobilesdk_app_id": "1:953071445640:android:ea0c38c1e2ab763abe213d",
+        "android_client_info": {
+          "package_name": "my.id.awdev",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
