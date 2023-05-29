@@ -1,0 +1,344 @@
+application {
+  config {
+    baseName awdev,
+    applicationType gateway,
+    packageName my.id.awdev.app,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+    clientFramework react
+  }
+  entities *
+}
+
+application {
+  config {
+    baseName AWDEV,
+    applicationType microservice,
+    packageName my.id.awdev,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+  }
+  entities A, B
+}
+
+application {
+  config {
+    baseName webview,
+    applicationType microservice,
+    packageName my.id.awdev.webview,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+  }
+  entities C
+}
+
+entity A {
+  "project_info": {
+    "project_number": "953071445640",
+    "project_id": "awdev-my-id",
+    "storage_bucket": "awdev-my-id.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953071445640:android:ea0c38c1e2ab763abe213d",
+        "android_client_info": {
+          "package_name": "my.id.awdev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953071445640-du8o0bslskddjvi1rp0qhv8tol4c4oa7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAXoY0ZSOZ1TNpCpXcEKG4p_x2N2h3h3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953071445640-du8o0bslskddjvi1rp0qhv8tol4c4oa7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953071445640:android:c25617fc775ebb9cbe213d",
+        "android_client_info": {
+          "package_name": "my.id.awdev.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953071445640-du8o0bslskddjvi1rp0qhv8tol4c4oa7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAXoY0ZSOZ1TNpCpXcEKG4p_x2N2h3h3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953071445640-du8o0bslskddjvi1rp0qhv8tol4c4oa7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953071445640:android:a51e28deb6a107febe213d",
+        "android_client_info": {
+          "package_name": "my.id.awdev.webview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953071445640-du8o0bslskddjvi1rp0qhv8tol4c4oa7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAXoY0ZSOZ1TNpCpXcEKG4p_x2N2h3h3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953071445640-du8o0bslskddjvi1rp0qhv8tol4c4oa7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+
+entity B {
+  "project_info": {
+    "project_number": "953071445640",
+    "project_id": "awdev-my-id",
+    "storage_bucket": "awdev-my-id.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953071445640:android:ea0c38c1e2ab763abe213d",
+        "android_client_info": {
+          "package_name": "my.id.awdev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953071445640-du8o0bslskddjvi1rp0qhv8tol4c4oa7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAXoY0ZSOZ1TNpCpXcEKG4p_x2N2h3h3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953071445640-du8o0bslskddjvi1rp0qhv8tol4c4oa7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953071445640:android:c25617fc775ebb9cbe213d",
+        "android_client_info": {
+          "package_name": "my.id.awdev.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953071445640-du8o0bslskddjvi1rp0qhv8tol4c4oa7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAXoY0ZSOZ1TNpCpXcEKG4p_x2N2h3h3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953071445640-du8o0bslskddjvi1rp0qhv8tol4c4oa7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953071445640:android:a51e28deb6a107febe213d",
+        "android_client_info": {
+          "package_name": "my.id.awdev.webview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953071445640-du8o0bslskddjvi1rp0qhv8tol4c4oa7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAXoY0ZSOZ1TNpCpXcEKG4p_x2N2h3h3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953071445640-du8o0bslskddjvi1rp0qhv8tol4c4oa7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+
+entity C {
+  "project_info": {
+    "project_number": "953071445640",
+    "project_id": "awdev-my-id",
+    "storage_bucket": "awdev-my-id.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953071445640:android:ea0c38c1e2ab763abe213d",
+        "android_client_info": {
+          "package_name": "my.id.awdev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953071445640-du8o0bslskddjvi1rp0qhv8tol4c4oa7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAXoY0ZSOZ1TNpCpXcEKG4p_x2N2h3h3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953071445640-du8o0bslskddjvi1rp0qhv8tol4c4oa7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953071445640:android:c25617fc775ebb9cbe213d",
+        "android_client_info": {
+          "package_name": "my.id.awdev.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953071445640-du8o0bslskddjvi1rp0qhv8tol4c4oa7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAXoY0ZSOZ1TNpCpXcEKG4p_x2N2h3h3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953071445640-du8o0bslskddjvi1rp0qhv8tol4c4oa7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953071445640:android:a51e28deb6a107febe213d",
+        "android_client_info": {
+          "package_name": "my.id.awdev.webview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953071445640-du8o0bslskddjvi1rp0qhv8tol4c4oa7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAXoY0ZSOZ1TNpCpXcEKG4p_x2N2h3h3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953071445640-du8o0bslskddjvi1rp0qhv8tol4c4oa7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+
+entity D {
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDO_WlJ7nHoe7T6udRU_wHO-TaW_LcZlTc",
+  authDomain: "awdev-my-id.firebaseapp.com",
+  projectId: "awdev-my-id",
+  storageBucket: "awdev-my-id.appspot.com",
+  messagingSenderId: "953071445640",
+  appId: "1:953071445640:web:6d0dc29b64282654be213d",
+  measurementId: "G-XBP1JRB80V"
+};
+
+relationship OneToMany {
+  A to B
+}
+    
