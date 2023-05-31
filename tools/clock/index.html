@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!-- Created By Awdev - www.awdev.my.id-->
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta charset="UTF-8">
+<title>Neumorphism Clock [ Jam Digital Online ] - AWDEV</title>   
+<meta name="keywords" content="AWDEV,Neumorphism Clock" />
+<meta name="description" content="Neumorphism Analog Clock UI Design Using HTML, CSS & JS AWDEV CORPORATION" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+<link rel="stylesheet" href="https://wahyu9kdl.github.io/css/tab-responsive/tab.css" />
+<link rel="stylesheet" href="https://wahyu9kdl.github.io/css/mobile-responsive/mobile.css" />
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link
+rel="stylesheet"
+href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+<script
+src="https://kit.fontawesome.com/585143586a.js"
+crossorigin="anonymous"
+></script>
+<link rel="icon" type="image/png" href="https://www.awdev.my.id/favicon.png"/>
+<link rel="icon" type="image/png" href="https://www.awdev.my.id/favicon.ico"/>
+<meta name="google-site-verification" content="0c8fGbhtTL8AL7NpkotILg1gycESMWqvmKXYdPJ_eO8" />
+<!-- Bing.com Validate -->
+<meta content='F9FF45AA030202D8730B5E92E3EAAD99' name='msvalidate.01'/>
+<!-- Google tag (gtag.js) -->
+<script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-5372MV9H7R'/>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag(&#39;js&#39;, new Date());
+
+gtag(&#39;config&#39;, &#39;G-5372MV9H7R&#39;);
+</script>
+<!-- Google tag (gtag.js) -->
+<script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-XBP1JRB80V'/>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag(&#39;js&#39;, new Date());
+
+gtag(&#39;config&#39;, &#39;G-XBP1JRB80V&#39;);
+</script>
+
+<script type='module'>
+// Import the functions you need from the SDKs you need
+import { initializeApp } from &quot;https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js&quot;;
+import { getAnalytics } from &quot;https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js&quot;;
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app&#39;s Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+apiKey: &quot;AIzaSyDO_WlJ7nHoe7T6udRU_wHO-TaW_LcZlTc&quot;,
+authDomain: &quot;awdev-my-id.firebaseapp.com&quot;,
+projectId: &quot;awdev-my-id&quot;,
+storageBucket: &quot;awdev-my-id.appspot.com&quot;,
+messagingSenderId: &quot;953071445640&quot;,
+appId: &quot;1:953071445640:web:6d0dc29b64282654be213d&quot;,
+measurementId: &quot;G-XBP1JRB80V&quot;
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+</script>
+<style type="text/css">
+* {
+margin: 10;
+padding: 10;
+box-sizing: border-box;
+}
+body {
+min-height: 100vh;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color: #dde1e7;
+}
+.clock {
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #dde1e7;
+height: 250px;
+width: 250px;
+border-radius: 50%;
+box-shadow: -3px -3px 7px #ffffff73 , 3px 3px 5px rgba(94,104,121,0.288);
+}
+.clock::before {
+content: '';
+position: absolute;
+height: 220px;
+width: 220px;
+background-color: #dde1e7;
+border-radius: 50%;
+box-shadow: inset -3px -3px 7px #ffffff73 , inset 3px 3px 5px rgba(94,104,121,0.288);
+}
+.clock::after {
+content: '';
+position: absolute;
+height: 120px;
+width: 120px;
+background-color: #dde1e7;
+border-radius: 50%;
+box-shadow: -1px -1px 5px #ffffff73 , 1px 1px 3px rgba(94,104,121,0.288);
+}
+.center--hr {
+height: 15px;
+width: 15px;
+background-color: #404040;
+border-radius: 50%;
+position: absolute;
+z-index: 2;
+}
+.center--hr2 {
+height: 9px;
+width: 9px;
+background-color: #c0392b;
+border-radius: 50%;
+position: absolute;
+z-index: 20;
+}
+.indicators span {
+position: absolute;
+width: 2px;
+height: 5px;
+background-color: #404040;
+}
+.indicators span:nth-child(1) {
+transform: rotate(30deg) translateY(-100px);
+}
+.indicators span:nth-child(2) {
+transform: rotate(60deg) translateY(-100px);
+}
+.indicators span:nth-child(3) {
+background-color: #c0392b;
+transform: rotate(90deg) translateY(-100px);
+}
+.indicators span:nth-child(4) {
+transform: rotate(120deg) translateY(-100px);
+}
+.indicators span:nth-child(5) {
+transform: rotate(150deg) translateY(-100px);
+}
+.indicators span:nth-child(6) {
+background-color: #c0392b;
+transform: rotate(180deg) translateY(-100px);
+}
+.indicators span:nth-child(7) {
+transform: rotate(210deg) translateY(-100px);
+}
+.indicators span:nth-child(8) {
+transform: rotate(240deg) translateY(-100px);
+}
+.indicators span:nth-child(9) {
+background-color: #c0392b;
+transform: rotate(270deg) translateY(-100px);
+}
+.indicators span:nth-child(10) {
+transform: rotate(300deg) translateY(-100px);
+}
+.indicators span:nth-child(11) {
+transform: rotate(330deg) translateY(-100px);
+}
+.indicators span:nth-child(12) {
+background-color: #c0392b;
+transform: rotate(360deg) translateY(-100px);
+}
+.sec--hand , .min--hand , .hr--hand {
+position: absolute;
+}
+.sec--hand , .sec {
+height: 180px;
+width: 180px;
+z-index: 6;
+}
+.min--hand , .min {
+height: 140px;
+width: 140px;
+z-index: 5;
+}
+.hr--hand , .hr {
+height: 110px;
+width: 110px;
+z-index: 4;
+}
+.sec , .min , .hr {
+display: flex;
+justify-content: center;
+position: absolute;
+}
+.sec::before {
+position: absolute;
+content: '';
+height: 110px;
+width: 3px;
+background-color: #c0392b;
+}
+.sec::after {
+position: absolute;
+content: '';
+width: 10px;
+height: 10px;
+background-color: #c0392b;
+border-radius: 50%;
+top: 105px;
+}
+.min::after {
+position: absolute;
+content: '';
+width: 4px;
+height: 70px;
+border-radius: 50px;
+background-color: #2980b9;
+top: 4px;
+}
+.hr::after {
+position: absolute;
+content: '';
+width: 5px;
+height: 50px;
+top: 0;
+border-radius: 50px;
+background-color: #303030;
+}
+.clock--num {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 30px;
+font-size: 22px;
+font-family: 'Orbitron' , sans-serif;
+height: 50px;
+width: 200px;
+font-weight: bold;
+background-color: #3688cf;
+background: linear-gradient(to right , #3688cf 15% , #cf2b2b 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+border-radius: 10px;
+box-shadow: -3px -3px 7px #ffffff73 , 3px 3px 5px rgba(94,104,121,0.288);
+}</style>
+
+
+</head>
+<body>
+<div class="clock">
+<div class="center--hr"></div>
+<div class="center--hr2"></div>
+<div class="indicators">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div class="sec--hand">
+<div class="sec"></div>
+</div>
+<div class="min--hand">
+<div class="min"></div>
+</div>
+<div class="hr--hand">
+<div class="hr"></div>
+</div>
+</div>
+<div class="clock--num"></div>
+<script>
+const sec = document.querySelector('.sec');
+const min = document.querySelector('.min');
+const hr = document.querySelector('.hr')
+const clockNum = document.querySelector('.clock--num')
+setInterval(function() {
+let time = new Date();
+let seconds = time.getSeconds();
+let minutes = time.getMinutes();
+let hours = time.getHours();
+let dayNight = 'AM';
+sec.style.transform = `rotate(${seconds * 6}deg)`;
+min.style.transform = `rotate(${minutes * 6}deg)`;
+hr.style.transform = `rotate(${hours * 30 + (minutes/2)}deg)`;
+
+if(hours > 12) {
+dayNight = 'PM';
+hours = hours -12;
+}
+if(seconds <10) {
+seconds = '0' + seconds;
+}
+if(minutes < 10) {
+minutes = '0' + minutes;
+}
+if(hours < 10) {
+hours = '0' +hours;
+}
+
+clockNum.textContent = hours + ':' + minutes + ':' + seconds + ' ' + dayNight;
+})
+</script>
+
+
+
+</body>
+</html>
