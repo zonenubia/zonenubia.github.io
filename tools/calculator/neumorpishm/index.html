@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator Neumorpishm | AWDEV V1.0.1</title>
+<!-- external css file -->
+<link href="https://fonts.googleapis.com/css?family=Baumans" rel="stylesheet" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5295583488737876"
+crossorigin="anonymous"></script>
+<meta name="keywords" content="Calculator,AWDEV,Calculator Neumorpishm " />
+<meta name="description" content=" How to make a calculator using html css and javascript Calculator Neumorpishm " />
+<link href="http://fonts.googleapis.com/css?family=Bitter&subset=latin" rel="stylesheet" type="text/css">
+<meta name="keywords" content="AWDEV, CALCULATOR, " />
+<meta name="description" content="A Calculator App designed with simple UI in Neumorphic design styles. v1.0.1 AWDEV" />
+<link rel="icon" type="image/png" href="https://www.awdev.my.id/favicon.png"/>
+<link rel="icon" type="image/png" href="https://www.awdev.my.id/favicon.ico"/>
+<meta name="google-site-verification" content="0c8fGbhtTL8AL7NpkotILg1gycESMWqvmKXYdPJ_eO8" />
+<!-- Bing.com Validate -->
+<meta content='F9FF45AA030202D8730B5E92E3EAAD99' name='msvalidate.01'/>
+<!-- Google tag (gtag.js) -->
+<script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-5372MV9H7R'/>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag(&#39;js&#39;, new Date());
+
+gtag(&#39;config&#39;, &#39;G-5372MV9H7R&#39;);
+</script>
+<!-- Google tag (gtag.js) -->
+<script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-XBP1JRB80V'/>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag(&#39;js&#39;, new Date());
+
+gtag(&#39;config&#39;, &#39;G-XBP1JRB80V&#39;);
+</script>
+
+<script type='module'>
+// Import the functions you need from the SDKs you need
+import { initializeApp } from &quot;https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js&quot;;
+import { getAnalytics } from &quot;https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js&quot;;
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app&#39;s Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+apiKey: &quot;AIzaSyDO_WlJ7nHoe7T6udRU_wHO-TaW_LcZlTc&quot;,
+authDomain: &quot;awdev-my-id.firebaseapp.com&quot;,
+projectId: &quot;awdev-my-id&quot;,
+storageBucket: &quot;awdev-my-id.appspot.com&quot;,
+messagingSenderId: &quot;953071445640&quot;,
+appId: &quot;1:953071445640:web:6d0dc29b64282654be213d&quot;,
+measurementId: &quot;G-XBP1JRB80V&quot;
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+</script>
+<style>
+.multicolortext {
+background-image: linear-gradient(to right, #e40303, #ff8c00, #ffed00, #008026, #004dff, #750787);
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+color: transparent;
+}
+</style>
+<style type="text/css">
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+background-color: #ecf0f3;
+font-family: sans-serif;
+outline: none;
+}
+
+.wrapper{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.calculator{
+background-color: #ecf0f3;
+padding: 15px;
+border-radius: 30px;
+box-shadow: inset 5px 5px 12px #fff, 5px 5px 12px rgba(0, 0, 0, 0.15);
+display: grid;
+grid-template-columns: repeat(4, 64px);
+}
+
+input{
+grid-column: span 4;
+height: 70px;
+width: 260px;
+background-color: #ecf0f3;
+box-shadow: inset -4px -6px 12px #fbfbfb91, inset 5px 5px 12px rgba(0, 0, 0, 0.15);
+border: none;
+border-radius: 30px;
+color: rgba(70, 70, 70);
+font-size: 50px;
+text-align: end;
+margin: auto;
+margin-top: 40px;
+margin-bottom: 30px;
+padding: 20px;
+}
+
+button{
+height: 48px;
+transition: 0.3s;
+width: 48px;
+background-color: #ecf0f3;
+box-shadow: -2px -2px 12px #fff, 5px 5px 12px rgb(0, 0, 0, 0.15);
+border: none;
+cursor: pointer;
+border-radius: 50%;
+margin: 8px;
+font-size: 16px;
+}
+button:hover{
+background-color: red;
+color: #fff;
+}
+.equal{
+width: 115px;
+border-radius: 40px;
+background-color: #ecf0f3;
+box-shadow: -1px -1px 12px #fff, 5px 5px 12px rgb(0, 0, 0, 0.15);
+}
+</style>  
+
+</head>
+<body>
+<div class="wrapper">
+<div class="calculator">
+<input type="text" placeholder="0" id="viewScreen">
+<button onclick="Clear()">C</button>
+<button onclick="del()">DEL</button>
+<button onclick="display('%')">%</button>
+<button onclick="display('/')">/</button>
+<button onclick="display('7')">7</button>
+<button onclick="display('8')">8</button>
+<button onclick="display('9')">9</button>
+<button onclick="display('*')">*</button>
+<button onclick="display('4')">4</button>
+<button onclick="display('5')">5</button>
+<button onclick="display('6')">6</button>
+<button onclick="display('-')">-</button>
+<button onclick="display('1')">1</button>
+<button onclick="display('2')">2</button>
+<button onclick="display('3')">3</button>
+<button onclick="display('+')">+</button>
+<button onclick="display('.')">.</button>
+<button onclick="display('0')">0</button>
+<button class="equal" onclick="calculate()">=</button>
+</div>
+</div>
+
+<!-- external js file -->
+<script type="text/javascript">
+let outputScreen = document.getElementById('viewScreen');
+
+function display(num)
+{
+outputScreen.value += num 
+}
+
+function calculate()
+{
+try{
+outputScreen.value = eval(outputScreen.value);
+}catch(err){
+alert('Invalid')
+}
+}
+
+function Clear()
+{
+outputScreen.value = "";
+}
+
+function del()
+{
+outputScreen.value = outputScreen.value.slice(0, -1);
+}
+</script> 
+<h3><span class="multicolortext" >Connect with me:</span></h3>
+<p align="left">
+<a href="https://www.awdev.my.id" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="san3" height="30" width="40" /></a>
+<a href="https://twitter.com/Awfanspage" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="awfanspage" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/ahmad-wahyudi-41b6841b6" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/ahmad-wahyudi-41b6841b6" height="30" width="40" /></a>
+<a href="https://fb.com/awdevglobal" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="awgroupchannel" height="30" width="40" /></a>
+<a href="https://www.awdev.my.id" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="awfanspage" height="30" width="40" /></a>
+<a href=" https://dribbble.com/wahyu9kdl/shots " target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/dribbble.svg" alt="wahyu9kdl" height="30" width="40" /></a>
+<a href="https://m.youtube.com/channel/UC7CRa3nkxakAZx_aRsMwRyA/playlists" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="aw youtube channel" height="30" width="40" /></a>
+</p>
+
+<footer style="background-color: #ecf0f3; color: #ddd;padding: 24px 30px; text-align: right;font-weight: bold;">
+<span id="year"></span> <a style="text-decoration: none; color: #ddd;" href="https://www.awdev.my.id"><span class="multicolortext" >AWDEV ©️ TOOLS CALCULATOR</a></span>
+</footer>
+</center>
+</body>
+</html>
