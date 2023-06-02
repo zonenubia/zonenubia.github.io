@@ -37,6 +37,19 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics'
 }
 
+apply plugin: 'com.android.application'
+// Add this line
+  
+apply plugin: 'com.google.gms.google-services'
+
+dependencies {
+  // add the Firebase SDK for Google Analytics
+  
+  implementation 'com.google.firebase:firebase-analytics:17.4.1'
+  // add SDKs for any other desired Firebase products
+  // https://firebase.google.com/docs/android/setup#available-libraries
+}
+
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyDO_WlJ7nHoe7T6udRU_wHO-TaW_LcZlTc",
