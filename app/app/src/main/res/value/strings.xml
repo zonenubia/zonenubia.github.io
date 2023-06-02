@@ -1,5 +1,24 @@
 <resources>
     <string name="app_name">AWDEV APP</string>
-<string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string> <string name="interstial_ad_unit_id">ca-app-pub-5708227574918293/1936465173</string>
+<string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string> 
+<string name="interstial_ad_unit_id">ca-app-pub-5708227574918293/1936465173</string>
 <string name="AppOpen_id">ca-app-pub-5708227574918293/6289330073</string>
+<string name="admob_showIntersitial_ad_unit_id">ca-app-pub-5708227574918293/7400528936</string>
+<string name="banner_ad_unit_id">ca-app-pub-5708227574918293/1936465173</string>
+<string name="admob_showIntersitial_ad_unit_id">ca-app-pub-5708227574918293/3529973205</string>
+<string name="banner_ad_unit_id">ca-app-pub-5708227574918293/3444810353</string>
+<string name="admob_showIntersitial_ad_unit_id">ca-app-pub-5708227574918293/9869130781</string>
+<string name="banner_ad_unit_id">ca-app-pub-5708227574918293/3444810353</string>
+<string name="admob_showIntersitial_ad_unit_id">ca-app-pub-5708227574918293/3072139793</string>
+<string name="banner_ad_unit_id">ca-app-pub-5708227574918293/9884227637</string>
+<string name="banner_ad_unit_id">ca-app-pub-5708227574918293/2953488209</string>
+<string name="native_ad_unit_id">ca-app-pub-5708227574918293/1215673194</string>
+<string name="native_ad_unit_id">ca-app-pub-5708227574918293/6445258659</string>
+<string name="native_ad_unit_id">ca-app-pub-5708227574918293/1215673194</string>
+<string name="native_ad_unit_id">ca-app-pub-5708227574918293/1902994942</string>
+<string name="native_ad_unit_id">ca-app-pub-5708227574918293/2448045571</string>
+<string name="native_ad_unit_id">ca-app-pub-5708227574918293/2950608450</string>
+<string name="reward_ad_unit_id">ca-app-pub-5708227574918293/4264508368</string>
+<string name="reward_ad_unit_id">ca-app-pub-5708227574918293/6289330073</string>
+<string name="reward_ad_unit_id">ca-app-pub-5708227574918293/6289330073</string>
 </resources>
