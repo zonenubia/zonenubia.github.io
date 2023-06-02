@@ -2,12 +2,12 @@
 	"name": "awdev",
 	"version": "1.0.0",
 	"description": "Awdev Personal Portfolio",
-	"homepage": "https://github.com/awdev-corporation/awdev",
+	"homepage": "https://github.com/zonenubia/zonenubia.github.io",
 	"website": "https://www.awdev.my.id/",
 	"main": "index.js",
 	"mobilesdk_app_id": "1:953071445640:android:ea0c38c1e2ab763abe213d",
         "android_client_info": {
-          "package_name": "my.id.awdev",
+          "package_name": "my.id.awdev.app",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -26,10 +26,10 @@
 		"AWDEV NEWS"
 	],
 	"author": "awdev (https://www.awdev.my.id)",
-	"url": "https://awdev-corporation.github.io/awdev",
-	"Github CLI": "gh repo clone awdev-corporation/awdev",
-	"repository": "https://github.com/awdev-corporation/qr.git",
-	"ssh": "git@github.com:awdev-corporation/awdev.git",
+	"url": "https://zonenubia.github.io",
+	"Github CLI": "gh repo clone zonenubia/zonenubia.github.io",
+	"repository": "https://github.com/zonenubia/zonenubia.github.io.git",
+	"ssh": "git@github.com:zonenubia/zonenubia.github.io.git",
 	"favicon": "/favicon.ico",
 	"license": "GNU Lesser General Public License v2.1",
 	"funding": "https://saweria.co/AwGroupChannel",
