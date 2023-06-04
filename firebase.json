@@ -1,7 +1,7 @@
 {
   "hosting": {
 
-    "public": "dist/app",  // "public" is the only required attribute for Hosting
+    "public": "/",  // "public" is the only required attribute for Hosting
 
     "ignore": [
       "firebase.json",
@@ -10,8 +10,8 @@
     ],
 
     "redirects": [ {
-      "source": "/foo",
-      "destination": "/bar",
+      "source": "/",
+      "destination": "/",
       "type": 301
     }, {
       "source": "/firebase/**",
