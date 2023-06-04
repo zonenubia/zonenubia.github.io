@@ -1,72 +1,16 @@
 {
   "hosting": {
-
-    "public": "/",  // "public" is the only required attribute for Hosting
-
+    "public": "build/web",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
-
-    "redirects": [ {
-      "source": "/",
-      "destination": "/",
-      "type": 301
-    }, {
-      "source": "/firebase/**",
-      "destination": "https://awdev-my-id.web.app",
-      "type": 302
-    } ],
-
-    "rewrites": [ {
-      // Shows the same content for multiple URLs
-      "source": "/**",
-      "destination": "/index.html"
-    }, {
-      // Configures a custom domain for Dynamic Links
-      "source": "/app/**",
-      "dynamicLinks": true
-    }, {
-      // Directs a request to Cloud Functions
-      "source": "/bigben",
-      "function": "bigben"
-    }, {
-      // Directs a request to a Cloud Run containerized app
-      "source": "/helloworld",
-      "run": {
-        "serviceId": "helloworld",
-        "region": "us-central1"
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
       }
-    } ],
-
-    "headers": [ {
-      "source": "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
-      "headers": [ {
-        "key": "Access-Control-Allow-Origin",
-        "value": "*"
-      } ]
-    }, {
-      "source": "**/*.@(jpg|jpeg|gif|png)",
-      "headers": [ {
-        "key": "Cache-Control",
-        "value": "max-age=7200"
-      } ]
-    }, {
-      "source": "404.html",
-      "headers": [ {
-        "key": "Cache-Control",
-        "value": "max-age=300"
-      } ]
-    } ],
-
-    "cleanUrls": true,
-
-    "trailingSlash": false,
-
-    // Required to configure custom domains for Dynamic Links
-    "appAssociation": "AUTO",
-
+    ]
   }
 }
-
