@@ -1,0 +1,36 @@
+User-agent: Mediapartners-Google 
+User-agent: * 
+Allow: /
+User-agent: Googlebot-News
+Allow: /
+User-agent: Adsbot-Google
+Allow: /
+User-agent: Googlebot-Image
+Allow: /
+User-agent: Googlebot-Mobile
+Allow: /
+User-agent: Googlebot
+Allow: /
+User-agent: Slurp
+Allow: /
+User-agent: bingbot
+Allow: /
+User-agent: *
+Mediapartners-Google Allow: / blog-admin/admin-ajax.php
+Disallow: /cgi-bin/
+Disallow: /
+User-agent: *
+Disallow: /search
+Disallow: /?m=0
+Disallow: /?m=1
+Sitemap: https://zonenubia.github.io/sitemap.xml
+https://zonenubia.github.io/sitemap1.xml
+https://zonenubia.github.io/index.txt
+Sitemap: https://zonenubia.github.io/news-sitemap.xml
+Sitemap: http://zonenubia.github.io/feeds/posts/default?orderby=updated
+Sitemap: https://zonenubia.github.io/sitemapimages.xml
+Sitemap: https://www.google.com/ping?sitemap=https://zonenubia.github.io/sitemap.xml
+Sitemap: https://www.bing.com/ping?sitemap=https://zonenubia.github.io/sitemap.xml
+Sitemap: https://www.yahoo.com/ping?sitemap=https://zonenubia.github.io/sitemap.xml
+Sitemap: https://www.yandex.com/ping?sitemap=https://zonenubia.github.io/sitemap.xml
+Sitemap: https://www.duckdugo.com/ping?sitemap=https://zonenubia.github.io/sitemap.xml
