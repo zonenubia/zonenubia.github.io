@@ -101,20 +101,16 @@
 - [BLOOG](http://www.awdev.my.id/blog)
   - [BLOOG 1](http://www.awdev.my.id/blog/a1.html)
   - [BLOOG 2](http://www.awdev.my.id/blog/a2.html)
+
+- [HTML - CSS](https://www.awdev.my.id/html-css/)
+- [MiniPaint](https://www.awdev.my.id/minipaint/)
 - [urls.cfg](http://www.awdev.my.id/urls.cfg)
 - [SITEMAP](https://www.awdev.my.id/sitemap.txt)
 - [FAQ](https://www.awdev.my.id/faq.html)
 - [PRIVASY](https://www.awdev.my.id/privasy.html)
 - [404](https://www.awdev.my.id/404.html)
-- [APP](https://www.awdev.my.id/app/htmleditor-2-1.apk)
-  - [awdev-2-2.aab.zip](app/awdev-2-2.aab.zip)
-  - [awdev-2-2.apk](app/awdev-2-2.apk)
-  - [htmleditor-2-1.aab.zip](app/htmleditor-2-1.aab.zip)
-  - [htmleditor-2-1.apk](app/htmleditor-2-1.apk)
-  - [CoinTracker.apk](http://www.awdev.my.id/search/crypto/CoinTracker.apk)
-  - [Youtube-Downloader.apk](http://www.awdev.my.id/youtube/youtube-downloader.apk)
-- [Wiki](https://github.com/zonenubia/awdev.wiki.git)
-- [Pull Requests](https://github.com/zonenubia/awdev/pulls)
+- [Wiki](https://github.com/zonenubia/zonenubia.github.io.wiki.git)
+- [Pull Requests](https://github.com/zonenubia/zonenubia.github.io/pulls)
 - [License](LICENSE)
 - [SECURITY](SECURITY.md)
 - [Authors](#authors)
@@ -126,17 +122,24 @@
 
 GITHUB CLI
 ```
-gh repo clone zonenubia/awdev
+gh repo clone /zonenubia/zonenubia.github.io
 ```
 HTTP/HTTPS
 
 ```
-https://github.com/zonenubia/awdev.git
+https://github.com/zonenubia/zonenubia.github.io.git
 ```
 ZIP
 ```
-https://github.com/zonenubia/awdev/archive/refs/heads/main.zip
+https://github.com/zonenubia/zonenubia.github.io/archive/refs/heads/main.zip
 ```
+
+## WEB APP RELEASE
+
+- [AWDEV PROFILE](https://www.awdev.my.id) - Connect Url : https://www.awdev.my.id
+- [GO AWDEV](https://go.awdev.my.id) - Connect Url : https://go.awdev.my.id
+- [WEB AWDEV](https://web.awdev.my.id) - Connect Url : https://web.awdev.my.id
+
 
 ## Sponsor this project
 
