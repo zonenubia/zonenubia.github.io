@@ -18,3 +18,15 @@
       }
     }
 }
+{
+    "plugins": ["ga"],
+    "pluginsConfig": {
+        "ga": {
+            "token": "G-XBP1JRB80V",
+            "configuration": {
+                "cookieName": "awdev-my-id",
+                "cookieDomain": "www.awdev.my.id"
+            }
+        }
+    }
+}
