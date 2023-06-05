@@ -48,7 +48,7 @@ const initLangSelector = () => {
             const language = e.data || { mime: null, mode: null };
             editor.setOption('mode', language.mime);
             CodeMirror.autoLoadMode(editor, language.mode);
-            document.title = e.text && e.text !== 'Plain Text' ? `NoPaste - ${e.text} code snippet` : 'NoPaste';
+            document.title = e.text && e.text !== 'Plain Text' ? `PasteDEV - ${e.text} code snippet` : 'PasteDEV';
         },
     });
 
@@ -163,7 +163,7 @@ const buildUrl = (rawData, mode) => {
     const query = shorten('Plain Text') === select.selected() ? '' : `?l=${encodeURIComponent(select.selected())}`;
     const url = base + query + '#' + rawData;
     if (mode === 'markdown') {
-        return `[NoPaste snippet](${url})`;
+        return `[PasteDEV snippet](${url})`;
     }
     if (mode === 'iframe') {
         const height = editor['doc'].height + 45;
