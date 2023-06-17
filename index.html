@@ -135,7 +135,75 @@ It's Friday! Invest a few hours contributing to the software you use and love:
 </p>
 </div>
 </header>
+<script type="text/javascript">
+// Parallax Ads In Middle Post by awdev.my.id
+(function() {
+let ads = document.querySelector('.awdevParallax');
+if (ads) {
+let post = document.querySelectorAll('.post-body br, .post-body p'), x = parseInt(post.length / 2);
+if (post[x].nodeName == 'P') {
+post[x].parentNode.insertBefore(ads, post[x]);
+}
+else {
+post[x].parentNode.insertBefore(ads, post[x].nextSibling);
+}
+}
+})();
+</script>
 
+<style type="text/css">
+/* Parallax Ads In Middle Post by awdev.my.id */
+.awdevParallax {
+display: block;
+height: 600px;
+margin: 1rem auto;
+position: relative;
+}
+.prlx1 {
+clip-path: inset(0 0 0 0);
+position: absolute;
+overflow: hidden;
+margin: auto;
+}
+.prlx2 {
+align-items: flex-start;
+display: flex;
+display: inline-flex;
+justify-content: center;
+position: fixed;
+}
+.prlx1, .prlx2 {
+bottom: 0;
+left: 0;
+right: 0;
+top: 10px;
+}
+.prlx1, .parallax ins {
+height: 100%;
+width: 100%;
+}
+</style>
+<b:if cond='data:blog.isMobileRequest and data:view.isPost and !data:view.isPreview'>
+<!-- Parallax Ads In Middle Post by awdev.my.id -->
+<div class='awdevParallax'>
+<div class='prlx1'>
+<div class='prlx2'>
+<!-- Pasang kode iklan di sini -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5708227574918293"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5708227574918293"
+     data-ad-slot="4287422654"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+</div>
+</b:if>
 <div class="container-lg p-responsive pb-6">
 <div class="gutter-sm d-flex flex-wrap flex-items-stretch pb-md-6">
 
