@@ -1,1 +1,16 @@
 google.com, pub-5708227574918293, DIRECT, f08c47fec0942fa0
+wortise.com, 4e10474a-c6ef-41f2-8ecb-73a03dbce323, DIRECT
+wortise.com, c7498d69-7d03-4137-a15b-210118c2ed02, DIRECT
+wortise.com, 4840e09f-34e8-40a1-bb80-01adbe147df3, DIRECT
+applovin.com, 4e10474a-c6ef-41f2-8ecb-73a03dbce323, DIRECT
+applovin.com, 8d63b150-3d3c-4684-adb6-cc68f6ed03a1, DIRECT
+unity.com, 78b0342b-ddb4-4e88-9bc3-60bda2fd542f, DIRECT
+adcolony.com, app3d04eefdf98a432c86, PUBLISHER, v4vc479045ccdd8f41e597
+adcolony.com, app3d04eefdf98a432c86, DIRECT
+unity.com, 5300707, DIRECT, 1375275814915
+unity.com, 5300707, DIRECT
+star.io, 205558881, DIRECT
+star.io, 205980302, DIRECT
+star.io, 205558881, DIRECT
+google.com, pub-5708227574918293, DIRECT, f08c47fec0942fa0
+
